@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('user/{name?}', function ($name = 'shapolang') {
+//     return 'Hello '.$name;
+// });
+
+Route::get('/','ArticleController@index');
+
